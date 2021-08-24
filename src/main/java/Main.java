@@ -8,7 +8,9 @@ public class Main {
         firstMyPerson.happyBirthday();
         System.out.printf(firstMyPerson.toString());
 
-        Person secondPerson = new PersonBuilder("Петр", "Петров")
+        Person secondPerson = new PersonBuilder()
+                .withName("Петр")
+                .withSurname("Петров")
                 .withAge(4)
                 .withCity("RUS")
                 .build();
